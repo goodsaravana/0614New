@@ -34,7 +34,7 @@ public class Junit_App
 	{
 		driver.findElement(By.id("email")).sendKeys("Kishore");
 		boolean a = driver.findElement(By.id("pass")).isDisplayed();
-		Assert.assertEquals(false, a);
+		Assert.assertEquals(true, a);
 		boolean b = driver.findElement(By.id("pass")).isEnabled();
 		Assert.assertEquals(true, b);
 		System.out.println(driver.getTitle());
